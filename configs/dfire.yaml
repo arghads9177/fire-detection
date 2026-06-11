@@ -1,0 +1,16 @@
+# D-Fire dataset configuration for YOLOv8
+#
+# D-Fire: an image dataset for fire and smoke detection, containing
+# images with bounding-box annotations for "fire" and "smoke" classes
+# (plus background images with no annotations).
+#
+# Source: https://github.com/gaia-solutions-on-demand/DFireDataset
+
+path: ../data/raw  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: val/images  # val images (relative to 'path')
+test: test/images  # test images (relative to 'path')
+
+# Classes
+nc: 2
+names: ['fire', 'smoke']
